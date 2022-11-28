@@ -26,11 +26,19 @@ class AddressBook{
         else 
         throw 'address is incorrect';
     }
+    toString()
+    {
+        const format = {name:'Char', address:'Char', number:'long'};
+        const name = this.name === undefined ? "undefined" :
+                     this.name.toLocaleDateString("en-US",format);
+        return "Name = "+this.name+", Address = "+this.address+", Number = "+this.number 
+    }
 }
-let jsonObj ={
+let jsonObj = {
     name:"Name",
     address:"Address",
     number:"Number"
 };
+console.log(jsonObj)
 document.getElementById('form')
 
