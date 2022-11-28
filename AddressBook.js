@@ -35,3 +35,16 @@ function hello(event)
  document.getElementById('formContent')
     .addEventListener('add',hello);
 }
+function createAndUpdateStorage(AddressBook){
+    let AddressBookList = JSON.parse(localStorage.getItem("AddressBook"));
+
+    if(AddressBookList != undefined){
+        AddressBook.push(AddresssBook);
+    }
+    else{
+        AddressBook = [AddressBook];
+    }
+
+    alert(AddressBook.toString());
+    localStorage.setItem("AddressBook",JSON.stringify(AddressBookList));
+}
