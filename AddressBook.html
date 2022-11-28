@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AddressBook Web Page</title>
+    <title>Address Book Data</title>
     <link rel="stylesheet" href="./AddressBook.Css">
-    <style>
-        div{
-               margin-bottom:-6em;
-        }
-    </style>
 </head>
 <body>
-    <div id="header">
-        <h1> <span style="color: blue;">ADDRESS</span><br> BOOK</h1>
-    </div>
-    <div>
-        <img src="./logo.png"width="50px" height="50px"alt="AddressBook Logo">
-    </div>
-    <h1 id="main"> Add Person Address Book UI/UX Design </h1>
-    <div>
-        <form class="from">
-        </form>
+    <header class="headerContent">
+        <div class="logoContent">
+            <img src="/addressbook.png" alt="AddressBookLogo">
+            <div>
+                <span class="employee">ADDRESS</span>
+                <br>
+                <span class="emp-text-nextline">BOOK</span>
+            </div>
+            <div class="Head-name">
+                Add Person Address Book UI/UX Design
+            </div>
+        </div>
+    </header>
+        <div class="formContent">
+        <form class="form" onsubmit="save();return false">
+        <div class="main-content">
+            <div class="header-content"> 
+                <div class="book-detail-text"> 
+                    Person Address form  
+                </div> 
+                <div class="img">
+                <img src="./sign.png" alt="">
+                </div> 
+            </div>
+        </form> 
     </div>
 </body>
 </html>
