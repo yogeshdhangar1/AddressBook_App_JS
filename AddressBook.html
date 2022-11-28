@@ -35,12 +35,13 @@
             <div class="row-content">
                 <label class="label text" for="name">FullName :  </label>
                 <input class="input" type="text" name="name" id="name" placeholder="Your Full Name...." required>
-                <error-output class="text-error" for="text"></error-output>
+                <error-output class="name-err" for="text"></error-output>
               </div>
 
               <div class="row-content">
                 <label class="label text" for="address">Address : </label>
                 <textarea class="input" id="address" name="Address.." style="height: 100px;"></textarea>
+                <error-output class="address-err" for = "text"></error-output>
               </div>
 
               <div class="row-content">
@@ -96,7 +97,7 @@
               <div class="row-content">
                 <label class="label text" for="number">Phone-Number</label>
                 <input class="input" type="text" name="number" id="number" placeholder="Phone-Number...." style="width:200px "required>
-                <error-output class="text-error" for="text"></error-output>
+                <error-output class="number-error" for="text"></error-output>
               </div>
               <div class="buttonParent">
                 <a href="./AddressBook.html" class="Add button submit Button"></a> 
@@ -112,4 +113,5 @@
         </form> 
     </div>
 </body>
+<script src="./AddressBook.js"></script>
 </html>
