@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./AddressBook.css">
 </head>
 <body>
-    <header class="headerContent">
+       <header class="header">
         <div class="logoContent">
             <img src="./addressbook.png" alt="AddressBookLogo">
             <div>
@@ -20,6 +20,16 @@
                 Add Person Address Book UI/UX Design
             </div>
         </div>
-    </header>
+        </header>
+        <div id="formContent">
+            <form id="form"  onsubmit="save(); return false">
+                <div class="main-content">
+                    <div class="header-content"> 
+                        Person Details
+                    </div>
+                        <button id="Add" >+Add Person</button>
+                    </div>
+            </form>
+        </div>
 </body>
 </html>
